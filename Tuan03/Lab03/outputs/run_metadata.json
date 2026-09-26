@@ -1,0 +1,15 @@
+{
+  "best_experiment": "engineered_gbr_remove_gt4000",
+  "best_cv_log_rmse": 0.12081189559861985,
+  "best_cv_std": 0.021116587570262062,
+  "metric": "RMSE on log1p(SalePrice), equivalent to Kaggle log-RMSE convention",
+  "train_shape": [
+    1460,
+    81
+  ],
+  "test_shape": [
+    1459,
+    80
+  ],
+  "paper_outliers_gt4000_count": 4
+}

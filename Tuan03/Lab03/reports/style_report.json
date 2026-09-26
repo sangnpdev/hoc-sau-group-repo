@@ -1,0 +1,170 @@
+{
+  "input": "D:\\HOCSAU\\hoc-sau-group-repo\\Tuan03\\Lab03\\reports\\lab03_house_price_NguyenPhuocSang_3123411255_da_chinh_sua.docx",
+  "fonts_by_char_count": {
+    "Times New Roman": 10315
+  },
+  "direct_run_formatting_runs": 275,
+  "direct_paragraph_formatting_paragraphs": 223,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 22,
+      "text": "4. K\u1ebft qu\u1ea3 cross-validation",
+      "style": "Normal"
+    },
+    {
+      "para_index": 45,
+      "text": "6. \u0110\u1eb7c tr\u01b0ng quan tr\u1ecdng",
+      "style": "Normal"
+    },
+    {
+      "para_index": 51,
+      "text": "7. \u0110\u1ed1i chi\u1ebfu v\u1edbi paper Dean De Cock (2011)",
+      "style": "Normal"
+    },
+    {
+      "para_index": 54,
+      "text": "8. S\u1ea3n ph\u1ea9m \u0111\u1ea7u ra v\u00e0 gi\u1edbi h\u1ea1n",
+      "style": "Normal"
+    },
+    {
+      "para_index": 70,
+      "text": "T\u1eadp d\u1eef li\u1ec7u",
+      "style": "Normal"
+    },
+    {
+      "para_index": 71,
+      "text": "S\u1ed1 d\u00f2ng",
+      "style": "Normal"
+    },
+    {
+      "para_index": 72,
+      "text": "S\u1ed1 c\u1ed9t",
+      "style": "Normal"
+    },
+    {
+      "para_index": 73,
+      "text": "N\u1ed9i dung",
+      "style": "Normal"
+    },
+    {
+      "para_index": 82,
+      "text": "Nh\u00f3m thu\u1ed9c t\u00ednh",
+      "style": "Normal"
+    },
+    {
+      "para_index": 83,
+      "text": "V\u00ed d\u1ee5 c\u1ed9t",
+      "style": "Normal"
+    },
+    {
+      "para_index": 84,
+      "text": "Ki\u1ec3u/gi\u00e1 tr\u1ecb v\u00ed d\u1ee5",
+      "style": "Normal"
+    },
+    {
+      "para_index": 85,
+      "text": "\u00dd ngh\u0129a",
+      "style": "Normal"
+    },
+    {
+      "para_index": 110,
+      "text": "B\u1ed9 \u0111\u1eb7c tr\u01b0ng",
+      "style": "Normal"
+    },
+    {
+      "para_index": 111,
+      "text": "Model",
+      "style": "Normal"
+    },
+    {
+      "para_index": 112,
+      "text": "C\u00e2u h\u1ecfi th\u00ed nghi\u1ec7m",
+      "style": "Normal"
+    },
+    {
+      "para_index": 131,
+      "text": "H\u1ea1ng",
+      "style": "Normal"
+    },
+    {
+      "para_index": 132,
+      "text": "Th\u00ed nghi\u1ec7m / model",
+      "style": "Normal"
+    },
+    {
+      "para_index": 133,
+      "text": "D\u1eef li\u1ec7u hu\u1ea5n luy\u1ec7n",
+      "style": "Normal"
+    },
+    {
+      "para_index": 134,
+      "text": "S\u1ed1 folds",
+      "style": "Normal"
+    },
+    {
+      "para_index": 135,
+      "text": "Log-RMSE trung b\u00ecnh \u00b1 std",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_run_formatting": [
+      {
+        "para_index": 1,
+        "run_text": "T\u00f3m t\u1eaft",
+        "style": "Heading 1"
+      },
+      {
+        "para_index": 2,
+        "run_text": "B\u00e0i to\u00e1n d\u1ef1 \u0111o\u00e1n gi\u00e1 b\u00e1n nh\u00e0 SalePrice t\u1eeb thu\u1ed9c t\u00ednh Ames Housing. D\u1eef li\u1ec7u c\u00f3 14",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "run_text": "1. B\u00e0i to\u00e1n v\u00e0 d\u1eef li\u1ec7u",
+        "style": "Heading 1"
+      },
+      {
+        "para_index": 4,
+        "run_text": "\u0110\u00e2y l\u00e0 b\u00e0i to\u00e1n h\u1ed3i quy c\u00f3 gi\u00e1m s\u00e1t. M\u1ed7i d\u00f2ng l\u00e0 m\u1ed9t c\u0103n nh\u00e0; X g\u1ed3m c\u00e1c thu\u1ed9c t\u00ed",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "run_text": "Train c\u00f3 7,829 \u00f4 thi\u1ebfu. V\u00ed d\u1ee5 c\u00e1c c\u1ed9t thi\u1ebfu nhi\u1ec1u: PoolQC (1453), MiscFeature (1",
+        "style": "Normal"
+      }
+    ],
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 70,
+        "text": "T\u1eadp d\u1eef li\u1ec7u",
+        "style": "Normal"
+      },
+      {
+        "para_index": 71,
+        "text": "S\u1ed1 d\u00f2ng",
+        "style": "Normal"
+      },
+      {
+        "para_index": 72,
+        "text": "S\u1ed1 c\u1ed9t",
+        "style": "Normal"
+      },
+      {
+        "para_index": 73,
+        "text": "N\u1ed9i dung",
+        "style": "Normal"
+      },
+      {
+        "para_index": 74,
+        "text": "train.csv",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}
