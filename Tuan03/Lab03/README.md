@@ -7,8 +7,8 @@ Dự án so sánh hồi quy scikit-learn và MLP PyTorch để dự đoán giá 
 Mở PowerShell tại thư mục gốc repository, sau đó:
 
 ```powershell
-cd 'Tuan03(nhom)'
-..\venv\Scripts\Activate.ps1
+cd 'Tuan03\Lab03'
+.\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 ```
 
@@ -17,19 +17,19 @@ Nếu không dùng virtual environment `venv` sẵn có, tạo môi trường ri
 Kiểm tra dữ liệu:
 
 ```powershell
-python test.py
+jupyter execute test.ipynb
 ```
 
 Chạy nhanh toàn bộ luồng (ít cây/epoch hơn, điểm chỉ để tham khảo):
 
 ```powershell
-python run_experiments.py --quick --folds 5 --mlp-folds 3
+jupyter execute run_experiments.ipynb
 ```
 
 Chạy cấu hình đầy đủ:
 
 ```powershell
-python run_experiments.py --folds 5 --mlp-folds 3
+jupyter execute run_experiments.ipynb
 ```
 
 Đường dẫn mặc định `data/` và `outputs/` tính từ thư mục `Tuan03(nhom)`. Có thể đổi bằng `--data-dir` và `--output-dir`; dùng `--skip-mlp` để bỏ MLP. Cấu hình đầy đủ tốn thời gian hơn vì Random Forest/Extra Trees dùng 700 cây mỗi lần fit và Gradient Boosting dùng 1.200 cây.
@@ -37,8 +37,30 @@ python run_experiments.py --folds 5 --mlp-folds 3
 Chạy bộ kiểm tra mã (không huấn luyện cuộc thi):
 
 ```powershell
-python -m pytest -q test_project.py
+jupyter execute test_project.ipynb
 ```
+
+## 1.1. Quy trình chạy bằng notebook
+
+Các notebook trong `src/` gọi lại pipeline thật và tự nối log vào `outputs/train_log.txt`; không có log hay kết quả được dựng sẵn.
+
+Chạy lần lượt trong VS Code hoặc JupyterLab:
+
+1. `src/01_eda.ipynb`
+2. `src/02_preprocess.ipynb`
+3. `src/05_feature_engineering.ipynb`
+4. `src/03_train_ml.ipynb`
+5. `src/04_train_mlp.ipynb` (có thể bỏ qua nếu không dùng MLP)
+6. `src/06_submission.ipynb`
+
+Mở JupyterLab từ thư mục `Tuan03/Lab03`:
+
+```powershell
+python -m pip install -r requirements.txt
+jupyter lab
+```
+
+Notebook huấn luyện dùng cấu hình `quick=True` để chạy thử; các kết quả CV, feature engineering, model và `submission.csv` chỉ được sinh sau khi chạy các cell tương ứng.
 
 ## 2. File trong project
 
@@ -46,11 +68,11 @@ python -m pytest -q test_project.py
 - `data/test.csv`: 1.459 căn nhà, `Id` và cùng 79 biến đầu vào (80 cột tổng), không có nhãn.
 - `data/data_description.txt`: giải nghĩa biến và mã phân loại.
 - `data/sample_submission.csv`: ví dụ định dạng nộp Kaggle.
-- `test.py`: in kích thước, mẫu, kiểu dữ liệu, giá trị thiếu và thống kê giá.
-- `house_price_pipeline.py`: nạp dữ liệu, tạo đặc trưng, tiền xử lý, định nghĩa model, cross-validation và lưu model.
-- `pytorch_mlp.py`: MLP PyTorch tương thích với pipeline scikit-learn; có validation nội bộ và early stopping.
-- `run_experiments.py`: điều phối thí nghiệm, xếp hạng, fit model tốt nhất và tạo submission.
-- `test_project.py`: kiểm tra feature engineering, xử lý thiếu/nhãn mới, metric và smoke fit.
+- `test.ipynb`: in kích thước, mẫu, kiểu dữ liệu, giá trị thiếu và thống kê giá.
+- `house_price_pipeline.ipynb`: nạp dữ liệu, tạo đặc trưng, tiền xử lý, định nghĩa model, cross-validation và lưu model.
+- `pytorch_mlp.ipynb`: MLP PyTorch tương thích với pipeline scikit-learn; có validation nội bộ và early stopping.
+- `run_experiments.ipynb`: điều phối thí nghiệm, xếp hạng, fit model tốt nhất và tạo submission.
+- `test_project.ipynb`: kiểm tra feature engineering, xử lý thiếu/nhãn mới, metric và smoke fit.
 - `requirements.txt`: thư viện Python cần cài.
 
 Chi tiết luồng, dữ liệu, cách đọc metric và khung trình bày nằm ở [HUONG_DAN_VA_PHAN_TICH.md](HUONG_DAN_VA_PHAN_TICH.md).
