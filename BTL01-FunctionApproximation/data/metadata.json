@@ -1,0 +1,57 @@
+{
+  "function": "f(x) = 1/(2*pi*sqrt(det C)) * exp(-0.5 (x-mu)^T C^-1 (x-mu))",
+  "mu": [
+    0.0,
+    0.0
+  ],
+  "cov": [
+    [
+      0.3,
+      -0.5
+    ],
+    [
+      -0.5,
+      2.0
+    ]
+  ],
+  "domain": {
+    "x1": [
+      -2.0,
+      2.0
+    ],
+    "x2": [
+      -4.0,
+      4.0
+    ]
+  },
+  "seed": 42,
+  "n_total": 2300,
+  "sampling": "np.random.default_rng(seed): sinh N_TOTAL giá trị x1 ~ U[-2,2] rồi N_TOTAL giá trị x2 ~ U[-4,4]",
+  "splits": {
+    "train": {
+      "file": "train.csv",
+      "n": 2000,
+      "rows": [
+        0,
+        2000
+      ]
+    },
+    "valid": {
+      "file": "valid.csv",
+      "n": 200,
+      "rows": [
+        2000,
+        2200
+      ]
+    },
+    "test": {
+      "file": "test.csv",
+      "n": 100,
+      "rows": [
+        2200,
+        2300
+      ]
+    }
+  },
+  "protocol": "Sinh một lần N_TOTAL điểm rồi chia tuần tự theo 'rows' (chỉ số [đầu, cuối)). train là kho 2000 mẫu; Exp A dùng A dòng đầu tiên. valid dùng để chọn checkpoint/siêu tham số; test chỉ dùng để đánh giá cuối cùng. Nhãn y không thêm nhiễu."
+}
