@@ -1,56 +1,22 @@
-import matplotlib
-matplotlib.use("Agg")  # headless-safe; no display required
-
+"""Dự đoán và tính chỉ số đánh giá (trên thang đo gốc của y)."""
 import numpy as np
 import torch
-import torch.nn as nn
-import matplotlib.pyplot as plt
-from torch.utils.data import DataLoader
+
+from src.data import scale_x, unscale_y
 
 
-def compute_metrics(
-    model: nn.Module,
-    loader: DataLoader,
-    device: str = "cpu",
-) -> tuple[dict, np.ndarray, np.ndarray]:
-    """Return (metrics_dict, y_true, y_pred) on the given loader."""
+@torch.no_grad()
+def predict(model, x, device="cpu"):
+    """x: numpy (N, 2) thang gốc → ŷ numpy (N,) thang gốc."""
     model.eval()
-    yt, yp = [], []
-    with torch.no_grad():
-        for X_b, y_b in loader:
-            yp.append(model(X_b.to(device)).cpu().numpy())
-            yt.append(y_b.numpy())
-    y_true = np.concatenate(yt).flatten()
-    y_pred = np.concatenate(yp).flatten()
-    mse  = float(np.mean((y_true - y_pred) ** 2))
-    mae  = float(np.mean(np.abs(y_true - y_pred)))
-    rmse = float(np.sqrt(mse))
-    return {"MSE": mse, "MAE": mae, "RMSE": rmse}, y_true, y_pred
+    xt = torch.from_numpy(scale_x(x)).to(device)
+    return unscale_y(model(xt).squeeze(1).cpu().numpy().astype(np.float64))
 
 
-def plot_loss(logs: list[dict], save_path: str) -> None:
-    epochs = [r["epoch"] for r in logs]
-    plt.figure(figsize=(8, 4))
-    plt.plot(epochs, [r["train_loss"] for r in logs], label="Train")
-    plt.plot(epochs, [r["val_loss"]   for r in logs], label="Val")
-    plt.xlabel("Epoch")
-    plt.ylabel("MSE Loss")
-    plt.title("Loss curve")
-    plt.legend()
-    plt.tight_layout()
-    plt.savefig(save_path, dpi=150)
-    plt.close()
-
-
-def plot_pred_vs_true(y_true: np.ndarray, y_pred: np.ndarray, save_path: str) -> None:
-    lo = min(y_true.min(), y_pred.min())
-    hi = max(y_true.max(), y_pred.max())
-    plt.figure(figsize=(5, 5))
-    plt.scatter(y_true, y_pred, alpha=0.4, s=10)
-    plt.plot([lo, hi], [lo, hi], "r--", linewidth=1)
-    plt.xlabel("y true")
-    plt.ylabel("y pred")
-    plt.title("Predicted vs True")
-    plt.tight_layout()
-    plt.savefig(save_path, dpi=150)
-    plt.close()
+def metrics(y_true, y_pred):
+    y_true = np.asarray(y_true, dtype=np.float64)
+    err = np.asarray(y_pred, dtype=np.float64) - y_true
+    mse = float(np.mean(err ** 2))
+    ss_tot = float(np.sum((y_true - y_true.mean()) ** 2))
+    return {"mse": mse, "rmse": mse ** 0.5, "mae": float(np.mean(np.abs(err))),
+            "r2": 1.0 - float(np.sum(err ** 2)) / ss_tot}

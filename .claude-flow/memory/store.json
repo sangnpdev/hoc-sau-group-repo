@@ -1,0 +1,203 @@
+{
+  "entries": {
+    "cmd-1793890128493": {
+      "key": "cmd-1793890128493",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T14:48:48.493Z",
+      "lastAccessed": "2026-11-05T14:48:48.493Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T14:48:48.493Z"
+    },
+    "cmd-1793890144278": {
+      "key": "cmd-1793890144278",
+      "value": "{\"command\":\"pip install openpyxl -q && cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T14:49:04.278Z",
+      "lastAccessed": "2026-11-05T14:49:04.278Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T14:49:04.278Z"
+    },
+    "cmd-1793890149979": {
+      "key": "cmd-1793890149979",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T14:49:09.979Z",
+      "lastAccessed": "2026-11-05T14:49:09.979Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T14:49:09.979Z"
+    },
+    "cmd-1793890174056": {
+      "key": "cmd-1793890174056",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\\DL_SGU\\\" && ls results/ 2>/dev/null && echo \\\"---\\\" && ls results/figures/ 2>/dev/null && echo \\\"---\\\" && ls results/tables/ 2>/dev/null && echo \\\"---\\\" && ls models/ 2>/dev/null && echo \\\"---\\\" && ls report/ 2>/dev/null\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T14:49:34.056Z",
+      "lastAccessed": "2026-11-05T14:49:34.056Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T14:49:34.056Z"
+    },
+    "cmd-1793890235342": {
+      "key": "cmd-1793890235342",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T14:50:35.342Z",
+      "lastAccessed": "2026-11-05T14:50:35.342Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T14:50:35.342Z"
+    },
+    "cmd-1793890669156": {
+      "key": "cmd-1793890669156",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T14:57:49.156Z",
+      "lastAccessed": "2026-11-05T14:57:49.156Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T14:57:49.156Z"
+    },
+    "cmd-1793890726699": {
+      "key": "cmd-1793890726699",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T14:58:46.699Z",
+      "lastAccessed": "2026-11-05T14:58:46.699Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T14:58:46.699Z"
+    },
+    "cmd-1793890733313": {
+      "key": "cmd-1793890733313",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T14:58:53.313Z",
+      "lastAccessed": "2026-11-05T14:58:53.313Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T14:58:53.313Z"
+    },
+    "cmd-1793890760957": {
+      "key": "cmd-1793890760957",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T14:59:20.957Z",
+      "lastAccessed": "2026-11-05T14:59:20.957Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T14:59:20.957Z"
+    },
+    "cmd-1793890764911": {
+      "key": "cmd-1793890764911",
+      "value": "{\"command\":\"tasklist 2>/dev/null | grep -i excel\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T14:59:24.911Z",
+      "lastAccessed": "2026-11-05T14:59:24.911Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T14:59:24.911Z"
+    },
+    "cmd-1793890949214": {
+      "key": "cmd-1793890949214",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:02:29.214Z",
+      "lastAccessed": "2026-11-05T15:02:29.214Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:02:29.214Z"
+    },
+    "cmd-1793890962409": {
+      "key": "cmd-1793890962409",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:02:42.409Z",
+      "lastAccessed": "2026-11-05T15:02:42.409Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:02:42.409Z"
+    },
+    "cmd-1793890972049": {
+      "key": "cmd-1793890972049",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python -c \\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:02:52.049Z",
+      "lastAccessed": "2026-11-05T15:02:52.049Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:02:52.049Z"
+    },
+    "cmd-1793891205279": {
+      "key": "cmd-1793891205279",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\" && git status --short BTL01-FunctionApproximation/DL_SGU/ 2>&1 | head -80\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:06:45.279Z",
+      "lastAccessed": "2026-11-05T15:06:45.279Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:06:45.279Z"
+    },
+    "cmd-1793891210041": {
+      "key": "cmd-1793891210041",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\" && git ls-files --others --exclude-standard BTL01-FunctionApproximation/DL_SGU/ 2>&1\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:06:50.041Z",
+      "lastAccessed": "2026-11-05T15:06:50.041Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:06:50.041Z"
+    },
+    "cmd-1793891214915": {
+      "key": "cmd-1793891214915",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\" && git ls-files --others --exclude-standard BTL01-FunctionApproximation/DL_SGU/ 2>&1 | grep -v \\\"runs/\\\" | sort\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:06:54.915Z",
+      "lastAccessed": "2026-11-05T15:06:54.915Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:06:54.915Z"
+    },
+    "cmd-1793891268243": {
+      "key": "cmd-1793891268243",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\" && git ls-files --others --exclude-standard BTL01-FunctionApproximation/DL_SGU/runs/ 2>&1 | wc -l && du -sh \\\"BTL01-FunctionApproximation/DL_SGU/runs/\\\" 2>/dev/null || echo \\\"du not available\\\" && ls \\\"BTL01-FunctionApproximation/DL_SGU/runs/\\\" 2>/dev/null && git ls-files BTL01-FunctionApproximation/phan-cong-cong-viec.xlsx 2>&1\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:07:48.243Z",
+      "lastAccessed": "2026-11-05T15:07:48.243Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:07:48.243Z"
+    },
+    "cmd-1793891321148": {
+      "key": "cmd-1793891321148",
+      "value": "{\"command\":\"cd \\\"D:\\\\HOCSAU\\\\hoc-sau-group-repo\\\" && find . -name \\\".gitignore\\\" -type f 2>/dev/null | head -5\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:08:41.148Z",
+      "lastAccessed": "2026-11-05T15:08:41.148Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:08:41.148Z"
+    },
+    "cmd-1793891692120": {
+      "key": "cmd-1793891692120",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\" && find . -name \\\"*_make_lich_commit.py\\\" -o -name \\\"lich_commit*\\\" 2>/dev/null | head -5\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:14:52.120Z",
+      "lastAccessed": "2026-11-05T15:14:52.120Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:14:52.120Z"
+    },
+    "cmd-1793891729910": {
+      "key": "cmd-1793891729910",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python _make_lich_commit.py && echo \\\"OK\\\" && rm _make_lich_commit.py\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:15:29.910Z",
+      "lastAccessed": "2026-11-05T15:15:29.910Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:15:29.910Z"
+    },
+    "cmd-1793892026517": {
+      "key": "cmd-1793892026517",
+      "value": "{\"command\":\"tasklist 2>/dev/null | grep -i excel\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:20:26.517Z",
+      "lastAccessed": "2026-11-05T15:20:26.517Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:20:26.517Z"
+    },
+    "cmd-1793892114343": {
+      "key": "cmd-1793892114343",
+      "value": "{\"command\":\"cd \\\"d:\\\\HOCSAU\\\\hoc-sau-group-repo\\\\BTL01-FunctionApproximation\\\" && python _make_lich_commit.py && rm _make_lich_commit.py && echo \\\"Done\\\"\",\"exitCode\":0,\"success\":true}",
+      "namespace": "commands",
+      "storedAt": "2026-11-05T15:21:54.343Z",
+      "lastAccessed": "2026-11-05T15:21:54.343Z",
+      "accessCount": 0,
+      "expiresAt": "2026-12-05T15:21:54.343Z"
+    }
+  },
+  "version": "3.0.0"
+}
