@@ -1,0 +1,9 @@
+
+\usepackage{float}
+\floatplacement{figure}{H}
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty,font=small}
+\usepackage{etoolbox}
+\AtBeginEnvironment{longtable}{\small}
+\AtBeginEnvironment{Shaded}{\small}
+\setlength{\parskip}{4pt}
