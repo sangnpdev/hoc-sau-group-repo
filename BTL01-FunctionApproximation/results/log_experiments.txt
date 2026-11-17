@@ -1,0 +1,8 @@
+===== stage: A
+[A] 30 runs, 32 workers
+===== stage: B
+[B] 42 runs, 32 workers
+===== stage: B200
+[B200] 42 runs, 32 workers
+===== stage: C
+[C] 15 runs, 15 workers
