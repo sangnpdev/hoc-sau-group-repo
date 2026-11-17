@@ -1,0 +1,7 @@
+===== stage: final
+[final] 27 runs, 32 workers
+final model: {'name': 'W40_D4', 'n_train': 2000, 'hidden_sizes': '40-40-40-40', 'depth': 4, 'width': 40, 'activation': 'sigmoid', 'lr': 0.01, 'batch_size': 32, 'seed': 0, 'n_params': 5081, 'best_epoch': 5931, 'epochs_run': 6000, 'train_time_s': 701.4052231120877, 'time_per_epoch_ms': 116.90087051868127, 'n_steps': 378000, 'train_mse': 2.148983315196428e-09, 'train_rmse': 4.635712798692805e-05, 'train_mae': 3.452263789486082e-05, 'train_r2': 0.9999993692807194, 'val_mse': 2.664318681748003e-09, 'val_rmse': 5.161703867666183e-05, 'val_mae': 3.652652018968633e-05, 'val_r2': 0.9999991123847004, 'test_mse': 1.2065729827631726e-09, 'test_rmse': 3.473575942401681e-05, 'test_mae': 2.7443837852440864e-05, 'test_r2': 0.9999997152787198, 'run_dir': 'runs/final/W40_D4_s0'}
+===== stage: plots
+figures in /home/chuong/Documents/Project/DL_SGU/results/figures
+===== stage: tables
+tables in /home/chuong/Documents/Project/DL_SGU/results/tables
