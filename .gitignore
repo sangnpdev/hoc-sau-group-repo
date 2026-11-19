@@ -221,3 +221,6 @@ __marimo__/
 .streamlit/secrets.toml
 
 /Tuan03/Lab03/outputs/
+# BTL01 training outputs
+BTL01-FunctionApproximation/runs/
+*.pt
