@@ -1,0 +1,142 @@
+{
+  "device": "cuda",
+  "classes": [
+    "angry",
+    "disgust",
+    "fear",
+    "happy",
+    "sad",
+    "surprise",
+    "neutral"
+  ],
+  "experiments": [
+    {
+      "name": "small",
+      "config": {
+        "name": "small",
+        "channels": [
+          32,
+          64,
+          128
+        ],
+        "dropout": 0.25,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "augmentation": false
+      },
+      "best_val_loss": 1.0388557260399842,
+      "best_val_accuracy": 0.6004458066313736,
+      "best_epoch": 12,
+      "checkpoint": "/content/fer2013_results/small_best.pt"
+    },
+    {
+      "name": "medium_aug",
+      "config": {
+        "name": "medium_aug",
+        "channels": [
+          32,
+          64,
+          128,
+          256
+        ],
+        "dropout": 0.35,
+        "learning_rate": 0.001,
+        "weight_decay": 0.0,
+        "augmentation": true
+      },
+      "best_val_loss": 1.2214929020049414,
+      "best_val_accuracy": 0.5246586792978546,
+      "best_epoch": 12,
+      "checkpoint": "/content/fer2013_results/medium_aug_best.pt"
+    },
+    {
+      "name": "medium_adamw",
+      "config": {
+        "name": "medium_adamw",
+        "channels": [
+          32,
+          64,
+          128,
+          256
+        ],
+        "dropout": 0.4,
+        "learning_rate": 0.0005,
+        "weight_decay": 0.0001,
+        "augmentation": true
+      },
+      "best_val_loss": 1.2019550299438535,
+      "best_val_accuracy": 0.5305098913346336,
+      "best_epoch": 11,
+      "checkpoint": "/content/fer2013_results/medium_adamw_best.pt"
+    }
+  ],
+  "best_experiment": "small",
+  "best_epoch": 12,
+  "best_validation_accuracy": 0.6004458066313736,
+  "private_test_accuracy": 0.6132627725601196,
+  "private_test_confusion_matrix": [
+    [
+      244,
+      2,
+      33,
+      31,
+      118,
+      14,
+      49
+    ],
+    [
+      26,
+      8,
+      5,
+      2,
+      11,
+      2,
+      1
+    ],
+    [
+      60,
+      4,
+      123,
+      23,
+      191,
+      80,
+      47
+    ],
+    [
+      17,
+      0,
+      12,
+      758,
+      44,
+      22,
+      26
+    ],
+    [
+      55,
+      0,
+      25,
+      32,
+      382,
+      11,
+      89
+    ],
+    [
+      8,
+      0,
+      28,
+      27,
+      11,
+      328,
+      14
+    ],
+    [
+      34,
+      0,
+      19,
+      45,
+      162,
+      8,
+      358
+    ]
+  ]
+}
