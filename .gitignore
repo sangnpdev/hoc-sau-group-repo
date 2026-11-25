@@ -224,3 +224,9 @@ __marimo__/
 # BTL01 training outputs
 BTL01-FunctionApproximation/runs/
 *.pt
+
+# BTL02 FER2013 datasets
+BTL02-EmotionRecognition/data/train/
+BTL02-EmotionRecognition/data/test/
+.playwright-mcp/
+.build/
