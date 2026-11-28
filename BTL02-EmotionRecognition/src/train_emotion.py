@@ -1,4 +1,14 @@
-"""Train and evaluate PyTorch CNNs on the folder-form FER2013 dataset."""
+"""Train and evaluate PyTorch CNNs on the folder-form FER2013 dataset.
+
+BTL02 - Nhan dien cam xuc khuon mat (FER2013). Phan cong:
+- 3123411255 Nguyen Phuoc Sang (nhom truong): kien truc EmotionCNN, vong lap huan luyen,
+  early stopping, checkpoint; tong hop ket qua va bao cao.
+- 3123411009 Tran Quoc An: xu ly du lieu, tien xu ly va tang cuong du lieu
+  (make_transform, make_loaders).
+- 3123411042 Nguyen Nguyen Chuong: thiet ke va chay 3 thi nghiem tren Colab, so sanh duong cong hoc.
+- 3123411279 Nguyen Gia Thieu: danh gia tren PrivateTest (confusion matrix, ca du doan sai,
+  truc quan hoa bo loc), slide thuyet trinh.
+"""
 
 from __future__ import annotations
 
